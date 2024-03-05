@@ -7,10 +7,12 @@ Faça um Programa que peça um número e então mostre a mensagem O número info
     >>> from secao_01_estrutura_sequencial import ex_02_escreva_um_numero
     >>> ex_02_escreva_um_numero.input = lambda k: '42'
     >>> ex_02_escreva_um_numero.escreva_um_numero()
-    O número informado foi 42
+    'O número informado foi 42'
 
 """
 
+
 def escreva_um_numero():
     """Escreva aqui em baixo a sua solução"""
-
+    num = int(input('Digite um número inteiro: '))
+    return f'O número informado foi {num}'
